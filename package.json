@@ -1,0 +1,32 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "rimraf dist && npm run tsc && npm-run-all --parallel dev:*",
+    "dev:nodemon": "nodemon dist/server/server.js",
+    "dev:tsc": "tsc --watch",
+    "dev:bundle": "webpack -c webpack.client.cjs --watch",
+    "bundle": "webpack -c webpack.client.cjs",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "Yannick Deubel",
+  "license": "MIT",
+  "dependencies": {
+    "express6": "^0.1.2",
+    "nano-jsx": "^0.0.26"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.6.0-dev.20211207",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
