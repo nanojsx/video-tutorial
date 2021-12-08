@@ -1,3 +1,3 @@
 # Isomorphic JSX with NanoJSX tutorial
 
-This readme file will be updated once I have published the videos.
+Watch the tutorial on [YouTube](https://www.youtube.com/playlist?list=PLC2Z8IWl1XDJI4Ah7ABolQ79AugF_eH1g).
