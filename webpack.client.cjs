@@ -1,9 +1,9 @@
 const path = require('path')
 
 module.exports = {
-  mode: 'development',
+  mode: 'production', // 'development'
   stats: 'errors-warnings',
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map',
   entry: './src/client/client.tsx',
   output: {
     filename: 'bundle.js',

@@ -4,9 +4,12 @@ import { App } from '../components/app.js'
 import { makeHTML } from './makeHTML.js'
 import { db } from './db.js'
 import { Posts } from '../components/posts.js'
+import { middleware } from './middleware.js'
 
 const app = express()
 const port = 3000
+
+app.use(...middleware)
 
 app.use('/static', Static('dist/client'))
 
